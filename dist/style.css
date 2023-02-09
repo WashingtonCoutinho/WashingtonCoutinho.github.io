@@ -641,6 +641,10 @@ video {
   margin-left: 0.5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -945,6 +949,14 @@ video {
   background-repeat: no-repeat;
 }
 
+.fill-orange-600 {
+  fill: #ea580c;
+}
+
+.fill-orange-500 {
+  fill: #f97316;
+}
+
 .p-12 {
   padding: 3rem;
 }
@@ -1117,6 +1129,10 @@ video {
   color: rgb(99 102 241 / var(--tw-text-opacity));
 }
 
+.decoration-orange-500 {
+  text-decoration-color: #f97316;
+}
+
 .placeholder-gray-500::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(107 114 128 / var(--tw-placeholder-opacity));
@@ -1175,6 +1191,10 @@ video {
 .shadow-third {
   --tw-shadow-color: #6D00B3;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.ring-offset-orange-500 {
+  --tw-ring-offset-color: #f97316;
 }
 
 .transition-all {
