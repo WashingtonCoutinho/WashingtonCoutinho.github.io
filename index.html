@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,11 +13,14 @@
     <title>Dev Washington Coutinho</title>
   </head>
   <body>
-    <header class="text-white bg-darkcolors-100 lg:px-44 px-12">
+    <header class="text-white sticky top-0 bg-darkcolors-100 lg:px-44 px-12 z-10  ">
       <div
         class="container mx-auto flex flex-wrap py-3 font-semibold uppercase flex-col md:flex-row items-center"
       >
-        <a class="flex font-medium items-center text-white mb-4 md:mb-0">
+        <a
+          class="flex font-medium items-center text-white mb-4 md:mb-0"
+          href="#header"
+        >
           <img
             src="src/img/Logo Invertido (Sem Fundo).png"
             alt="Logotipo Washington Coutinho"
@@ -27,12 +30,13 @@
         <nav
           class="md:ml-auto gap-5 flex flex-wrap items-center text-base justify-center"
         >
-          <a class="hover:text-primary">About Me</a>
-          <a class="hover:text-primary">Portfolio</a>
-          <a class="hover:text-primary">Tech Skills</a>
+          <a class="hover:text-primary" href="#aboutme">About Me</a>
+          <a class="hover:text-primary" href="#portfolio">Portfolio</a>
+          <a class="hover:text-primary" href="#tech">Tech Skills</a>
         </nav>
-        <button
-          class="inline-flex items-center text-white bg-prtext-primary border-2 border-white drop-shadow-white rounded-full py-1 px-3 focus:outline-none bg-primary hover:bg-secondary uppercase text-base mt-4 md:mt-0 md:ml-5 hover:scale-105"
+        <a
+          class="inline-flex items-center text-white bg-prtext-primary border-2 border-white shadow-white rounded-full py-1 px-3 focus:outline-none bg-primary hover:bg-secondary uppercase text-base mt-4 md:mt-0 md:ml-5 hover:scale-105"
+          href="#contactme"
         >
           Get in Touch
           <svg
@@ -46,11 +50,12 @@
           >
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-        </button>
+        </a>
       </div>
     </header>
     <section
       class="text-white min-h-[calc(100vh-64px)] md:py-28 sm:p-12 font-bold uppercase bg-gradient-to-b from-darkcolors-300 to-darkcolors-500 body-font lg:px-44"
+      id="header"
     >
       <div
         class="container flex md:flex-row md:px-0 p-12 flex-col items-center"
@@ -58,18 +63,16 @@
         <div
           class="lg:flex-grow md:w-2/3 flex flex-col md:items-start md:text-left text-center mb-16 md:mb-0 sm:text-center items-center"
         >
-          <h1
-            class="title-font sm:text-4xl text-3xl mb-6 font-medium text-white"
-          >
+          <h1 class="title-font sm:text-4xl text-3xl mb-8 font-bold text-white">
             Hello, <br class="hidden lg:inline-block" />I'm Washington Coutinho
           </h1>
           <h3 class="mb-8 text-lg leading-relaxed">
             Growth hacker, Marketing Consultant, Psychologist and <br /><span
-              class="text-3xl"
+              class="text-4xl"
               >Front-end Developer</span
             >
           </h3>
-          <div class="flex gap-3 justify-center">
+          <div class="flex gap-8 justify-center">
             <a href="https://github.com/WashingtonCoutinho/">
               <img
                 class="hover:scale-110"
@@ -92,6 +95,192 @@
             alt="hero"
             src="src/img/Washington-Coutinho-Dev.png"
           />
+        </div>
+      </div>
+    </section>
+    <section
+      class="text-white md:py-28 sm:p-12 bg-gradient-to-b from-darkcolors-700 to-darkcolors-300 body-font lg:px-44"
+      id="aboutme"
+    >
+      <h2 class="uppercase font-bold text-4xl text-primary text-center">
+        My Career
+      </h2>
+      <div class="px-16" id="career">
+        <div
+          id="growth"
+          class="p-9 mt-16 group flex md:flex-row flex-col gap-9 items-center justify-center bg-black border-primary rounded-3xl border-2 shadow-primary transition-all hover:scale-[1.02] hover:border-white hover:shadow-wl"
+        >
+          <div class="group-hover:scale-105 group-hover:drop-shadow-wl">
+            <svg
+              width="105"
+              height="106"
+              viewBox="0 0 105 106"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="0.5" width="105" height="105" rx="52.5" fill="#EA7339" />
+              <path
+                d="M68.5 64.75H71.125C71.875 64.75 72.625 64 72.625 63.25V36.25C72.625 35.5 71.875 34.75 71.125 34.75H68.5C67.75 34.75 67 35.5 67 36.25V63.25C67 64 67.75 64.75 68.5 64.75ZM46 64.75H48.625C49.375 64.75 50.125 64 50.125 63.25V40C50.125 39.25 49.375 38.5 48.625 38.5H46C45.25 38.5 44.5 39.25 44.5 40V63.25C44.5 64 45.25 64.75 46 64.75ZM57.25 64.75H59.875C60.625 64.75 61.375 64 61.375 63.25V47.5C61.375 46.75 60.625 46 59.875 46H57.25C56.5 46 55.75 46.75 55.75 47.5V63.25C55.75 64 56.5 64.75 57.25 64.75ZM80.125 70.375H27.625V32.875C27.625 31.8391 26.7859 31 25.75 31H23.875C22.8391 31 22 31.8391 22 32.875V72.25C22 74.3207 23.6793 76 25.75 76H80.125C81.1609 76 82 75.1609 82 74.125V72.25C82 71.2141 81.1609 70.375 80.125 70.375ZM34.75 64.75H37.375C38.125 64.75 38.875 64 38.875 63.25V55C38.875 54.25 38.125 53.5 37.375 53.5H34.75C34 53.5 33.25 54.25 33.25 55V63.25C33.25 64 34 64.75 34.75 64.75Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="text-center md:text-left">
+            <h3 class="font-bold uppercase text-xl mb-4">Growth Hacker</h3>
+            <p class="max-w-3xl font-semibold">
+              As a Growth Hacker i worked at Cotidiano Aceleradora (Startup
+              Accelerator) and Facilite Tecnologia (Accounting Startup), helping
+              than to achieve the best results according to the goals that we
+              defined. <br /><br />
+              In the most recent experience, at Facilite, i started as Marketing
+              and Growth Consultant, creating a strategic planning to growth
+              with weekly meetings and training the Marketing Team and C-Levels
+              at Growth Hacking Methodology, than with the good results achieved
+              i was invited to be Head of Growth, on this position we doubled
+              the monthly customer acquisition, achieving the goal of 200% of
+              MRR growth.
+            </p>
+          </div>
+        </div>
+        <div
+          id="marketing"
+          class="p-9 mt-16 group flex md:flex-row flex-col gap-9 items-center justify-center bg-black border-secondary rounded-3xl border-2 shadow-secondary transition-all hover:scale-[1.02] hover:border-white hover:shadow-wl"
+        >
+          <div class="group-hover:scale-105 group-hover:drop-shadow-wl">
+            <svg width="105" height="106" viewBox="0 0 105 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect y="0.5" width="105" height="105" rx="52.5" fill="#00A6CF"/>
+              <path d="M59.1429 61.5357C59.1429 62.4237 58.4237 63.1429 57.5357 63.1429H47.8929C47.0049 63.1429 46.2857 62.4237 46.2857 61.5357V56.7143H27V71.1786C27 73.75 29.25 76 31.8214 76H73.6071C76.1786 76 78.4286 73.75 78.4286 71.1786V56.7143H59.1429V61.5357ZM73.6071 40.6429H65.5714V35.8214C65.5714 33.25 63.3214 31 60.75 31H44.6786C42.1071 31 39.8571 33.25 39.8571 35.8214V40.6429H31.8214C29.25 40.6429 27 42.8929 27 45.4643V53.5H78.4286V45.4643C78.4286 42.8929 76.1786 40.6429 73.6071 40.6429ZM59.1429 40.6429H46.2857V37.4286H59.1429V40.6429Z" fill="white"/>
+              </svg>              
+          </div>
+          <div class="text-center md:text-left">
+            <h3 class="font-bold uppercase text-xl mb-4">Marketing Consultant</h3>
+            <p class="max-w-3xl font-semibold">
+              As a Growth Hacker i worked at Cotidiano Aceleradora (Startup
+              Accelerator) and Facilite Tecnologia (Accounting Startup), helping
+              than to achieve the best results according to the goals that we
+              defined. <br /><br />
+              In the most recent experience, at Facilite, i started as Marketing
+              and Growth Consultant, creating a strategic planning to growth
+              with weekly meetings and training the Marketing Team and C-Levels
+              at Growth Hacking Methodology, than with the good results achieved
+              i was invited to be Head of Growth, on this position we doubled
+              the monthly customer acquisition, achieving the goal of 200% of
+              MRR growth.
+            </p>
+          </div>
+      </div>
+      <div
+          id="developer"
+          class="p-9 mt-16 group flex md:flex-row flex-col gap-9 items-center justify-center bg-black border-third rounded-3xl border-2 shadow-third transition-all hover:scale-[1.02] hover:border-white hover:shadow-wl"
+        >
+          <div class="group-hover:scale-105 group-hover:drop-shadow-wl">
+            <svg width="105" height="106" viewBox="0 0 105 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect y="0.5" width="105" height="105" rx="52.5" fill="#6D00B3"/>
+              <path d="M46.4147 52.9966C46.9641 53.5459 47.8544 53.5459 48.4037 52.9966L49.3978 52.0025C49.9471 51.4532 49.9471 50.5629 49.3978 50.0136L46.2583 46.875L49.3969 43.7355C49.9462 43.1862 49.9462 42.2959 49.3969 41.7466L48.4028 40.7525C47.8535 40.2032 46.9632 40.2032 46.4139 40.7525L41.2863 45.8801C40.737 46.4294 40.737 47.3197 41.2863 47.869L46.4147 52.9966ZM54.8531 52.0034L55.8472 52.9975C56.3965 53.5468 57.2868 53.5468 57.8361 52.9975L62.9637 47.8699C63.513 47.3206 63.513 46.4303 62.9637 45.881L57.8361 40.7534C57.2868 40.2041 56.3965 40.2041 55.8472 40.7534L54.8531 41.7475C54.3038 42.2968 54.3038 43.1871 54.8531 43.7364L57.9917 46.875L54.8531 50.0145C54.3038 50.5638 54.3038 51.4541 54.8531 52.0034ZM78.8438 66.5625H57.5338C57.4688 68.3036 56.2409 69.375 54.6563 69.375H49.3125C47.6698 69.375 46.4104 67.8396 46.4323 66.5625H25.4063C24.6328 66.5625 24 67.1953 24 67.9688V69.375C24 72.4688 26.5313 75 29.625 75H74.625C77.7188 75 80.25 72.4688 80.25 69.375V67.9688C80.25 67.1953 79.6172 66.5625 78.8438 66.5625ZM74.625 34.2188C74.625 31.8984 72.7266 30 70.4063 30H33.8438C31.5234 30 29.625 31.8984 29.625 34.2188V63.75H74.625V34.2188ZM69 58.125H35.25V35.625H69V58.125Z" fill="white"/>
+              </svg>              
+          </div>
+          <div class="text-center md:text-left">
+            <h3 class="font-bold uppercase text-xl mb-4">Front-end Developer</h3>
+            <p class="max-w-3xl font-semibold">
+              As a Growth Hacker i worked at Cotidiano Aceleradora (Startup
+              Accelerator) and Facilite Tecnologia (Accounting Startup), helping
+              than to achieve the best results according to the goals that we
+              defined. <br /><br />
+              In the most recent experience, at Facilite, i started as Marketing
+              and Growth Consultant, creating a strategic planning to growth
+              with weekly meetings and training the Marketing Team and C-Levels
+              at Growth Hacking Methodology, than with the good results achieved
+              i was invited to be Head of Growth, on this position we doubled
+              the monthly customer acquisition, achieving the goal of 200% of
+              MRR growth.
+            </p>
+          </div>
+      </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-white md:py-28 sm:p-12 bg-darkcolors-500 body-font lg:px-44" id="portfolio">
+      <h2 class="uppercase font-bold text-4xl text-primary text-center mb-16">
+        Portfolio
+      </h2>
+      <div id="portfoliocards" class=" flex gap-16 justify-center items-center ">
+        <div id="website1" class="p-9 mt-16 group flex flex-row md:flex-col gap-6 items-center justify-center bg-black border-primary  rounded-3xl border-2 shadow-primary  transition-all hover:scale-[1.02] hover:border-white hover:shadow-wl">
+          <img src="src/img/MacBook-Washington-Coutinho.png" alt="Website Washington Coutinho">
+          <h3 class="uppercase font-bold text-lg">Consultant Website</h3>
+          <p>Technologies used:</p>
+          <div class="flex gap-2">
+            <img src="src/img/Wordpress-Icon.png" alt="Wordpress" class=" rounded-full border-2 border-black hover:border-white">
+            <img src="src/img/CSS-Icon.png" alt="CSS3" class=" rounded-full border-2 border-black hover:border-white">
+            <img src="src/img/Javascript-Icon.png" alt="Javascript" class=" rounded-full border-2 border-black hover:border-white">
+          </div>
+          <a
+          class="inline-flex items-center w-full justify-center text-white bg-prtext-primary border-2 border-white shadow-white rounded-full py-1 px-3 focus:outline-none bg-primary hover:bg-third uppercase text-base hover:scale-105" type="button" href="https://washingtoncoutinho.com.br"
+        >
+          Visit Website
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+        </div>
+        <div id="website2" class="p-9 mt-16 group flex flex-row md:flex-col gap-6 items-center justify-center bg-black border-primary  rounded-3xl border-2 shadow-primary  transition-all hover:scale-[1.02] hover:border-white hover:shadow-wl">
+          <img src="src/img/MacBook-RocketPay.png" alt="Website Washington Coutinho">
+          <h3 class="uppercase font-bold text-lg">Checkout Page</h3>
+          <p>Technologies used:</p>
+          <div class="flex gap-2">
+            <img src="src/img/HTML-Icon.png" alt="HTML5" class=" rounded-full border-2 border-black hover:border-white">
+            <img src="src/img/CSS-Icon.png" alt="CSS3" class=" rounded-full border-2 border-black hover:border-white">
+            <img src="src/img/Javascript-Icon.png" alt="Javascript" class=" rounded-full border-2 border-black hover:border-white">
+          </div>
+          <a
+          class="inline-flex items-center w-full justify-center text-white bg-prtext-primary border-2 border-white shadow-white rounded-full py-1 px-3 focus:outline-none bg-primary hover:bg-third uppercase text-base hover:scale-105" type="button" href="#"
+        >
+          Visit Project
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+        </div>
+        <div id="website3" class="p-9 mt-16 group flex flex-row md:flex-col gap-6 items-center justify-center bg-black border-primary  rounded-3xl border-2 shadow-primary  transition-all hover:scale-[1.02] hover:border-white hover:shadow-wl">
+          <img src="src/img/MacBook-Brasil-Startups.png" alt="Website Washington Coutinho">
+          <h3 class="uppercase font-bold text-lg">Startup Landing Page</h3>
+          <p>Technologies used:</p>
+          <div class="flex gap-2">
+            <img src="src/img/HTML-Icon.png" alt="HTML5" class=" rounded-full border-2 border-black hover:border-white">
+            <img src="src/img/CSS-Icon.png" alt="CSS3" class=" rounded-full border-2 border-black hover:border-white">
+            <img src="src/img/Javascript-Icon.png" alt="Javascript" class=" rounded-full border-2 border-black hover:border-white">
+          </div>
+          <a
+          class="inline-flex items-center w-full justify-center text-white bg-prtext-primary border-2 border-white shadow-white rounded-full py-1 px-3 focus:outline-none bg-primary hover:bg-third uppercase text-base hover:scale-105" type="button" href="https://washingtoncoutinho.com.br"
+        >
+          Visit Website
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
         </div>
       </div>
     </section>
